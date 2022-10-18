@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="./Todo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
+    <title>Todo</title>
+</head>
+<body>
+    <div class="container rounded border border-dark w-50 mt-5 pt-4">
+        <h2 class="text-center text-capitalize ">To do list</h2>
+        <div class="w-100 container">
+            <form class="d-flex justify-content-center rounded mb-3">
+                <input type="text" id="textInput" placeholder="add item" class="w-100 text-area ">
+                <input type="button" id="buttonInput" value="Add" class="btn btn-rounded  add-btn">
+            </form>
+            <div class="listTodo mb-3 d-flex justify-content-between w-25">
+                <span class="op" data-target="All">
+                    <a href="#" type="button">
+                        All
+                    </a>
+                </span>
+                <span class="op" data-target="Actiive">
+                    <a href="#" type="button">
+                        Active
+                    </a>
+                </span>
+                <span class="op" data-target="Complite">
+                    <a href="#" type="button">
+                        Complite
+                    </a>
+                </span>
+            </div>
+            <div>
+                <ul class="list-unstyled " id="list" data-xor="true">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="Todo.js"></script>
+    <script src="./js/all.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
